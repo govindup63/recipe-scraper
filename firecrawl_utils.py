@@ -5,7 +5,7 @@ import os
 genai.configure(api_key="YOUR_GENERATIVEAI_API_KEY")
 model = genai.GenerativeModel("gemini-1.5-flash")
 # Initialize Firecrawl SDK with API key
-app = FirecrawlApp(api_key="YOUR_FIRECRAWL_API_KEY")
+app = FirecrawlApp(api_key="YOUR_FIRECRWAL_API_KEY")
 
 
 def scrape_website(url):
