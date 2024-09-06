@@ -1,0 +1,78 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f8f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #6b8e23; /* Olive green for a fresh feel */
+    font-family: 'Georgia', serif;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 120px); /* Adjusted width to fit container better */
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ddd; /* Soft border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #8e9a5b; /* Slightly muted olive green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+button:hover {
+    background-color: #6b8e23; /* Darker olive green on hover */
+}
+
+.results {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%; /* Ensure the container doesn't expand beyond its parent */
+    overflow-wrap: break-word; /* Break long words to prevent overflow */
+    word-wrap: break-word; /* Older alternative for word breaking */
+    word-break: break-word; /* Ensures words are broken if too long */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.results pre {
+    background-color: #f8f8f8; /* Subtle background for code blocks */
+    color: #333;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto; /* Allow horizontal scrolling for long content */
+    white-space: pre-wrap; /* Ensure that code blocks wrap within the container */
+    max-width: 100%; /* Constrain code blocks to the container width */
+}
+
+.results h2, .results p {
+    max-width: 100%; /* Make sure all elements fit inside the container */
+    overflow-wrap: break-word; /* Prevent overflow for long words */
+    word-wrap: break-word; /* Break long words to fit within the container */
+    margin-bottom: 12px; /* Add spacing between elements */
+}
